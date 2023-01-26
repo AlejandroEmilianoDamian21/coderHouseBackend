@@ -1,4 +1,4 @@
-class ProductManager {
+export class ProductManager {
   constructor() {
     this.products = [];
     this.id = 1;
@@ -81,23 +81,30 @@ class ProductManager {
 
 }
 
-/**** To run it ****/
-
 const productManager = new ProductManager();
 
-//add product
-productManager.addProduct("Product 1", "This is a sample product", 9.99, "path/to/thumbnail.jpg", "product1", 10);
 
-//get products
-const products = productManager.getProducts();
-console.log(products);
+export default ProductManager;
 
-//get products by id
-const product = productManager.getProductById(1);
-console.log(product);
 
-//update product
-productManager.updateProduct(1, "Product 1 Updated", "This is an updated sample product", 12.99, "path/to/updated-thumbnail.jpg", "product1", 20);
 
-//get updated products
-const updatedProducts = productManager
+/**** To run it ****/
+
+// const productManager = new ProductManager();
+
+// //add product
+// productManager.addProduct("Product 1", "This is a sample product", 9.99, "path/to/thumbnail.jpg", "product1", 10);
+
+// //get products
+// const products = productManager.getProducts();
+// console.log(products);
+
+// //get products by id
+// const product = productManager.getProductById(1);
+// console.log(product);
+
+// //update product
+// productManager.updateProduct(1, "Product 1 Updated", "This is an updated sample product", 12.99, "path/to/updated-thumbnail.jpg", "product1", 20);
+
+// //get updated products
+// const updatedProducts = productManager
