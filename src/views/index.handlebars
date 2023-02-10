@@ -1,0 +1,17 @@
+<div>
+    <ul>
+        <li>Mi nombre es {{user.name}}</li>
+        <li>Mi apeliido es {{user.last_name}}</li>
+        <li>Mi edad es {{user.age}}</li>
+        <li>Mi correo es <a href="http://{{user.mail}}">{{user.mail}}</a></li>
+        {{#if isAdmin}}
+            {{#each food}}
+                <div><ol>Sale de {{this.name}} el precio es de {{this.price}}</ol></div>
+            {{/each}}
+        {{else}}
+        <p style="color: red;">No tienes permisos para ver los alimentos</p>
+        {{/if}}
+    </ul>
+</div>
+
+<script src="/js/index.js"></script>
