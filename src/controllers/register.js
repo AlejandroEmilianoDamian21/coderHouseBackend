@@ -1,5 +1,5 @@
 export const getRegister = async (req, res) => {
-    res.render('register', { title: 'Registration', style:'index.css', user});
+    res.render('register', { title: 'Registration', style:'index.css'});
 }
 
 export const createRegister = async   (req, res) => {
